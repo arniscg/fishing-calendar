@@ -1,0 +1,38 @@
+.item {
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    /* padding: 5px; */
+}
+
+.item:hover {
+    filter: brightness(70%);
+    transform: scale(1.1);
+    border: 2px solid black;
+    cursor: grab;
+}
+
+.item:hover .date-entry {
+    width: 100%;
+}
+
+.date-entry {
+    width: 103%;
+    height: 7px;
+    margin-bottom: 2px;
+    left: -3px;
+}
+
+.current-date {
+    filter: brightness(85%);
+    /* border: 2px solid black; */
+}
+
+.blue-date {
+    background-color: #C4C4C4;
+}
+
+.red-date {
+    background-color: #E2E2E2;
+}

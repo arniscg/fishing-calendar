@@ -1,0 +1,69 @@
+{
+    "rules": [
+        {
+            "text": "23.1. Aizliegts lomā paturēt nēģus",
+            "from": "2021-1-1",
+            "to": "2021-12-31",
+            "keywords": ["nēģi", "loms"]
+        },
+        {
+            "text": "23.3. Aizliegts lomā paturēt alatas",
+            "from": "2021-2-1",
+            "to": "2021-4-30",
+            "keywords": ["alata", "loms"]
+        },
+        {
+            "text": "23.4. Aizliegts lomā paturēt līdakas",
+            "from": "2021-3-1",
+            "to": "2021-4-30",
+            "keywords": ["līdaka", "loms"]
+        },
+        {
+            "text": "23.5. Aizliegts lomā paturēt salates (meža vimbas)",
+            "from": "2021-3-1",
+            "to": "2021-5-15",
+            "keywords": ["salata", "loms"]
+        },
+        {
+            "text": "23.6. Aizliegts lomā paturēt zandartus",
+            "from": "2021-4-16",
+            "to": "2021-5-31",
+            "keywords": ["zandarts", "loms"]
+        },
+        {
+            "text": "23.7. Aizliegts lomā paturēt akmeņplekstes",
+            "from": "2021-6-1",
+            "to": "2021-7-31",
+            "keywords": ["akmeņplekste", "loms"]
+        },
+        {
+            "text": "23.7. Aizliegts lomā paturēt strauta foreles",
+            "from": "2021-9-1",
+            "to": "2021-11-30",
+            "keywords": ["forele", "loms"]
+        },
+        {
+            "text": "23.7. Aizliegts lomā paturēt sīgas un repšus",
+            "from": "2021-10-1",
+            "to": "2021-11-30",
+            "keywords": ["sīga", "repsis", "loms"]
+        },
+        {
+            "text": "24. Aizliegta jebkura veida makšķerēšana no laivām (izņemot Baltijas līci) un kanālos un caurtecēs",
+            "from": "2021-3-1",
+            "to": "2021-4-30"
+        },
+        {
+            "text": "25. Aizliegts izmantot ēsmai zivis jebkuros ūdeņos, izņemot Baltijas jūras un Rīgas jūras līča ūdeņus.",
+            "from": "2021-3-1",
+            "to": "2021-4-30",
+            "keywords": ["ēsma"]
+        },
+        {
+            "text": "23.2.2. Aizliegts lomā paturēt lašus un taimiņus Baltijas jūras un Rīgas jūras līča ūdeņos, izņemot izņemot lašus un taimiņus, kas iegūti Rīgas jūras līča ūdeņu teritorijā no Vecāķiem līdz Vaivariem, kura atrodas starp perpendikuliem, kas vilkti no krasta punktu koordinātām N57° 05,165' E24° 07,156' un N56° 57,795' E23° 38,288', līdz 20 metru dziļumam.",
+            "from": "2021-10-1",
+            "to": "2021-11-15",
+            "keywords": ["lasis", "taimiņš", "loms"]
+        }
+    ]
+}

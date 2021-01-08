@@ -1,0 +1,42 @@
+body {
+    margin: 100px;
+    font: normal 12px Verdana, Arial, sans-serif;
+}
+
+.calendar {
+    display: flex;
+}
+
+#dateContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 3px;
+    justify-content: center;
+}
+
+#monthContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infoContainer {
+  
+}
+
+.month-name {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    /* writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 20px;
+    transform: rotate(180deg); */
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 20px;
+    transform: rotate(180deg);
+}
