@@ -5,9 +5,10 @@ import { Calendar } from "./calendar";
 import * as data from "./data.json"
 
 const container = document.getElementById("calendar");
+const monthNavigation = document.getElementById("monthNav");
 const modal = document.getElementById("myModal");
 
-const calendar = new Calendar();
+const calendar = new Calendar(monthNavigation);
 console.log(calendar);
 
 // monthNameContainer.appendChild(MonthName("", 100));
@@ -25,12 +26,12 @@ calendar.draw(container);
 // calendar.addRules(data.rules);
 // calendar.draw(container);
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    setTimeout(() => {
-        const currentDate = document.getElementsByClassName("current-date")[0];
-        currentDate.scrollIntoView({ behavior: 'smooth' })
-    }, 1000);
-});
+// document.addEventListener("DOMContentLoaded", function(event) {
+//     setTimeout(() => {
+//         const currentDate = document.getElementsByClassName("current-date")[0];
+//         currentDate.scrollIntoView({ behavior: 'smooth' })
+//     }, 1000);
+// });
 
 window.onclick = (event: Event) => {
     if (event.target == modal) {

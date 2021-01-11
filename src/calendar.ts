@@ -16,11 +16,13 @@ export class Calendar {
     rules: rule[] = [];
     monthSpaces: number[] = [];
     container: HTMLElement;
+    navigationContainer: HTMLElement
     monthContainer: HTMLDivElement;
     infoContainer: HTMLDivElement;
     dateContainer: HTMLDivElement;
 
-    constructor() {
+    constructor(navigationContainer: HTMLElement) {
+        this.navigationContainer = navigationContainer;
         this.addDays();
     }
 
@@ -71,6 +73,16 @@ export class Calendar {
         for (const month of this.getMonths()) {
             const monthName = MonthName(month.name, (month.spaces) * 100 + (month.spaces) * 3);
             this.monthContainer.appendChild(monthName);
+            const monthLink = document.createElement("a");
+            monthLink.href = "#";
+            monthLink.innerHTML = month.name;
+            monthLink.onclick = () => {
+                const el = this.days.find(d => d.month.name === month.name && d.date == 15).element;
+                setTimeout(() => {
+                    el.scrollIntoView({ block: "center", inline: "center" });
+                }, 0);
+            };
+            this.navigationContainer.appendChild(monthLink);
         }
     }
 
@@ -100,7 +112,7 @@ export class Calendar {
                 }
             }
 
-            ruleDays.forEach(day => {
+            ruleDays.forEach((day, idx) => {
                 for (let i = 0; i < ruleSlot; i++) {
                     if (!day.slots.includes(i)) {
                         let entryDiv = document.createElement("div");
@@ -114,6 +126,11 @@ export class Calendar {
 
                 let entryDiv = document.createElement("div");
                 entryDiv.classList.add("date-entry");
+                if (idx === 0) {
+                    entryDiv.classList.add("entry-start");
+                } else if (idx === ruleDays.length - 1) {
+                    entryDiv.classList.add("entry-end");
+                }
                 entryDiv.style.backgroundColor = ruleColor;
 
                 day.entries.push({
